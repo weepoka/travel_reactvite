@@ -14,13 +14,13 @@ const PagesDropDown = () => {
       <div
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
-        className="flex items-center"
+        className="flex items-center "
       >
         <p>Pages</p> <IoMdArrowDropdown />
       </div>
 
       {isDropDownOpen && (
-        <div className="w-24">
+        <div className="absolute mt-10 text-black bg-white p-3 rounded text-base font-normal w-36">
           <p>Destination</p>
           <p>Booking</p>
           <p>Travel Guides</p>
