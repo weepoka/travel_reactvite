@@ -34,6 +34,7 @@ const Navbar = () => {
             Register
           </button>
         </div>
+        
       </div>
       <hr className="text-white z-50" />
     </div>

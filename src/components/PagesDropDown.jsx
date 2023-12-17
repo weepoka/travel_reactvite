@@ -20,7 +20,7 @@ const PagesDropDown = () => {
       </div>
 
       {isDropDownOpen && (
-        <div className="w-24 bg-red-400 mt-10">
+        <div className="w-24">
           <p>Destination</p>
           <p>Booking</p>
           <p>Travel Guides</p>
