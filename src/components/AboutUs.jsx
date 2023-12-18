@@ -3,14 +3,18 @@ import { FaArrowRight } from "react-icons/fa";
 
 const AboutUs = () => {
   return (
-    <div className="grid grid-cols-2 mt-96 justify-center mx-40">
+    <div className="grid grid-cols-2 mt-80 justify-center mx-40">
       <img className="h-4/5 w-5/6" src={aboutImg} alt="About Us" />
       <div className="">
         <span className="flex text-lime-600">
           <h1 className=" font-bold text-xl">ABOUT US</h1>
-          <span className="-mt-1 ml-2">
-            <p className="-mb-3">---</p>
-            <p>-----</p>
+          <span className="mt-2 ml-2">
+            <p className="">
+              <hr className="w-12 h-0.5 bg-gray-100 border-0 rounded dark:bg-lime-600" />
+            </p>
+            <p className="mt-2">
+              <hr className="w-16 h-px bg-gray-100 border-0 rounded  dark:bg-lime-600" />
+            </p>
           </span>
         </span>
         <h1 className="text-4xl font-bold text-gray-600">
