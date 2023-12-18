@@ -31,7 +31,7 @@ const OurServices = () => {
     <div>
       <div className="text-center">
         <div className="flex justify-center">
-          <span className="mt-2 ml-2">
+          <span className="mt-2 mr-5">
             <p className="">
               <hr className="w-12 h-0.5 bg-gray-100 border-0 rounded dark:bg-lime-600" />
             </p>
@@ -39,17 +39,17 @@ const OurServices = () => {
               <hr className="w-16 h-px bg-gray-100 border-0 rounded  dark:bg-lime-600" />
             </p>
           </span>
-          <p>Services</p>
-          <span className="mt-2 ml-2">
+          <p className="text-lime-600 font-bold">SERVICES</p>
+          <span className="mt-2 ml-5">
             <p className="">
-              <hr className="w-12 h-0.5 bg-gray-100 border-0 rounded dark:bg-lime-600 float-right" />
+              <hr className="w-12 h-0.5 bg-gray-100 border-0 rounded dark:bg-lime-600" />
             </p>
             <p className="mt-2">
               <hr className="w-16 h-px bg-gray-100 border-0 rounded  dark:bg-lime-600" />
             </p>
           </span>
         </div>
-        <h1>Our Services</h1>
+        <h1 className="text-4xl font-bold text-slate-700">Our Services</h1>
       </div>
       {services.map((service, index) => {
         return (

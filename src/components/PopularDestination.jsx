@@ -7,19 +7,19 @@ const PopularDestination = () => {
   return (
     <div>
       <div className="text-center">
-        <div className="flex justify-center">
-          <span className="mt-2 ml-2">
+        <div className="flex justify-center text-lime-600">
+          <span className="mt-2 mr-5 items-right">
             <p className="">
-              <hr className="w-12 h-0.5 bg-gray-100 border-0 rounded dark:bg-lime-600" />
+              <hr className="w-12 h-0.5 bg-gray-100 border-0 rounded dark:bg-lime-600 pl-10" />
             </p>
             <p className="mt-2">
               <hr className="w-16 h-px bg-gray-100 border-0 rounded  dark:bg-lime-600" />
             </p>
           </span>
-          <p>DESTINATION</p>
-          <span className="mt-2 ml-2">
+          <p className="font-bold">DESTINATION</p>
+          <span className="mt-2 ml-5">
             <p className="">
-              <hr className="w-12 h-0.5 bg-gray-100 border-0 rounded dark:bg-lime-600 float-right" />
+              <hr className="w-12 h-0.5 bg-gray-100 border-0 rounded dark:bg-lime-600" />
             </p>
             <p className="mt-2">
               <hr className="w-16 h-px bg-gray-100 border-0 rounded  dark:bg-lime-600" />
