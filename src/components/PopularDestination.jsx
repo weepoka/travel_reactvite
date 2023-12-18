@@ -1,3 +1,8 @@
+import destination1 from "/img/destination-1.jpg";
+import destination2 from "/img/destination-2.jpg";
+import destination3 from "/img/destination-3.jpg";
+import destination4 from "/img/destination-4.jpg";
+
 const PopularDestination = () => {
   return (
     <div>
@@ -21,11 +26,22 @@ const PopularDestination = () => {
             </p>
           </span>
         </div>
-        <h1>Popular Destination</h1>
+        <h1 className="text-4xl font-bold text-slate-700">
+          Popular Destination
+        </h1>
+      </div>
+      <div className="mt-20 mx-20 grid grid-cols-2 gap-4">
+        <div className="">
+          <img className="h-80" src={destination1} alt="" />
+          <div className="mt-0.5 grid grid-cols-2 gap-2">
+            <img src={destination2} alt="" />
+            <img src={destination3} alt="" />
           </div>
-          <div>
-              
-          </div>
+        </div>
+        <div className="w-full h-4/5">
+          <img className="h-full w-full" src={destination4} alt="" />
+        </div>
+      </div>
     </div>
   );
 };
