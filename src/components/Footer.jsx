@@ -12,6 +12,7 @@ import { IoMdMail } from "react-icons/io";
 import package1 from "/img/package-1.jpg";
 import package2 from "/img/package-2.jpg";
 import package3 from "/img/package-3.jpg";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -129,7 +130,12 @@ const Footer = () => {
       <div className="flex justify-between mx-36 pb-8">
         <div className="flex items-center">
           <FaCopyright className="mr-1" />
-          <p className="mr-1">Travel Agency, All Rights Reserved.</p>
+          <p className="mr-1 flex">
+            <Link to="/">
+              <p>Travel Agency</p>
+            </Link>
+            , All Rights Reserved.
+          </p>
           <p>DevelopedBy Weepoka</p>
         </div>
         <div className="flex">

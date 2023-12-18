@@ -1,6 +1,10 @@
 import package1 from "/img/package-1.jpg";
 import package2 from "/img/package-2.jpg";
 import package3 from "/img/package-3.jpg";
+import { FaLocationDot } from "react-icons/fa6";
+import { FaCalendarAlt } from "react-icons/fa";
+import { IoPersonSharp } from "react-icons/io5";
+import { FaStar } from "react-icons/fa";
 
 const OurPackages = [
   {
@@ -36,8 +40,17 @@ const Packages = () => {
   return (
     <div>
       <div className="text-center">
-        <div className="flex justify-center">
-          <span className="mt-2 ml-2">
+        <div className="flex justify-center text-lime-600">
+          <span className="mt-2 mr-5 items-right">
+            <p className="">
+              <hr className="w-12 h-0.5 bg-gray-100 border-0 rounded dark:bg-lime-600 pl-10" />
+            </p>
+            <p className="mt-2">
+              <hr className="w-16 h-px bg-gray-100 border-0 rounded  dark:bg-lime-600" />
+            </p>
+          </span>
+          <p className="font-bold">PACKAGES</p>
+          <span className="mt-2 ml-5">
             <p className="">
               <hr className="w-12 h-0.5 bg-gray-100 border-0 rounded dark:bg-lime-600" />
             </p>
@@ -45,29 +58,43 @@ const Packages = () => {
               <hr className="w-16 h-px bg-gray-100 border-0 rounded  dark:bg-lime-600" />
             </p>
           </span>
-          <p>Packages</p>
-          <span className="mt-2 ml-2">
-            <p className="">
-              <hr className="w-12 h-0.5 bg-gray-100 border-0 rounded dark:bg-lime-600 " />
-            </p>
-            <p className="mt-2">
-              <hr className="w-16 h-px bg-gray-100 border-0 rounded  dark:bg-lime-600 " />
-            </p>
-          </span>
         </div>
-        <h1>Awesome Packages</h1>
+        <h1 className="text-4xl font-bold text-slate-700">Awesome Packages</h1>
       </div>
-      <div>
+      <div className="grid grid-cols-3 gap-4 mx-40 mb-20 mt-6">
         {OurPackages.map((packages, i) => {
           return (
             <div key={i}>
-              <div>
-                <img src={packages.img} alt={packages.place} />
-                <p>{packages.place}</p>
-                <p>{packages.duration}</p>
-                <p>{packages.person}</p>
-                <p>{packages.price}</p>
-                <p>{packages.details}</p>
+              <img src={packages.img} alt={packages.place} />
+              <div className="flex items-center justify-between mx-5">
+                <span className="flex items-center text-center">
+                  <FaLocationDot className="text-lime-600 mr-2" />
+                  <p className="text-gray-400">{packages.place}</p>
+                </span>
+                <span className="flex items-center text-center">
+                  <FaCalendarAlt className="text-lime-600 mr-2" />
+                  <p className="text-gray-400">{packages.duration}</p>
+                </span>
+                <span className="flex items-center text-center">
+                  <IoPersonSharp className="text-lime-600 mr-2" />
+                  <p className="text-gray-400">{packages.person}</p>
+                </span>
+              </div>
+              <p className="text-center font-bold text-3xl text-gray-700 mt-4">
+                {packages.price}
+              </p>
+              <div className="flex text-lime-600 justify-center">
+                <FaStar />
+                <FaStar />
+                <FaStar />
+                <FaStar />
+                <FaStar />
+              </div>
+              <p className="text-gray-500 mt-2">{packages.details}</p>
+              <div className="flex justify-center mx-auto items-center bg-lime-600 w-3/5  h-10 rounded-lg mt-4 text-white">
+                <button className="">Read More</button>
+                <p className="mx-1 h-6">|</p>
+                <button className="bg-lime-600">Book Now</button>
               </div>
             </div>
           );

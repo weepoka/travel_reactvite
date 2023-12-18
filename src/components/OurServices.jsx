@@ -1,9 +1,28 @@
 import { FaGlobe, FaHotel } from "react-icons/fa";
 import { IoPersonSharp } from "react-icons/io5";
 import { MdOutlineSettings } from "react-icons/md";
-import Services from "./Services";
 
 const services = [
+  {
+    icon: <FaGlobe />,
+    title: "World Wide Tours",
+    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem ad itaque atque ab eum eaque!",
+  },
+  {
+    icon: <FaHotel />,
+    title: "Hotel Reservation",
+    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem ad itaque atque ab eum eaque!",
+  },
+  {
+    icon: <IoPersonSharp />,
+    title: "Travel Guides",
+    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem ad itaque atque ab eum eaque!",
+  },
+  {
+    icon: <MdOutlineSettings />,
+    title: "Event Management",
+    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem ad itaque atque ab eum eaque!",
+  },
   {
     icon: <FaGlobe />,
     title: "World Wide Tours",
@@ -51,16 +70,19 @@ const OurServices = () => {
         </div>
         <h1 className="text-4xl font-bold text-slate-700">Our Services</h1>
       </div>
-      {services.map((service, index) => {
-        return (
-          <Services
-            key={index}
-            icon={service.icon}
-            title={service.title}
-            desc={service.desc}
-          />
-        );
-      })}
+      <div className="grid grid-cols-4 gap-20 mx-32 mt-10">
+        {services.map((service, index) => {
+          return (
+            <ul className="w-80" key={index}>
+              <li className="text-lime-600 text-5xl">{service.icon}</li>
+              <li className="text-2xl text-zinc-700 font-bold mt-4">
+                {service.title}
+              </li>
+              <li className="text-gray-500 mt-4">{service.desc}</li>
+            </ul>
+          );
+        })}
+      </div>
     </div>
   );
 };

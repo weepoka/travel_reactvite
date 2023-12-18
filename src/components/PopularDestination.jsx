@@ -5,7 +5,7 @@ import destination4 from "/img/destination-4.jpg";
 
 const PopularDestination = () => {
   return (
-    <div>
+    <div className="mt-20">
       <div className="text-center">
         <div className="flex justify-center text-lime-600">
           <span className="mt-2 mr-5 items-right">
