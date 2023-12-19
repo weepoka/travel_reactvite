@@ -38,8 +38,8 @@ const OurPackages = [
 
 const Packages = () => {
   return (
-    <div>
-      <div className="text-center">
+    <div className="mt-80 mb-40">
+      <div className="text-center mb-10">
         <div className="flex justify-center text-lime-600">
           <span className="mt-2 mr-5 items-right">
             <p className="">
@@ -61,7 +61,7 @@ const Packages = () => {
         </div>
         <h1 className="text-4xl font-bold text-slate-700">Awesome Packages</h1>
       </div>
-      <div className="grid grid-cols-3 gap-4 mx-40 mb-20 mt-6">
+      <div className="grid grid-cols-3 gap-4 mx-40 mt-6 h-96">
         {OurPackages.map((packages, i) => {
           return (
             <div key={i}>
@@ -94,7 +94,7 @@ const Packages = () => {
               <div className="flex justify-center mx-auto items-center bg-lime-600 w-3/5  h-10 rounded-lg mt-4 text-white">
                 <button className="">Read More</button>
                 <p className="mx-1 h-6">|</p>
-                <button className="bg-lime-600">Book Now</button>
+                <button className="bg-lime-600 bottom-px">Book Now</button>
               </div>
             </div>
           );

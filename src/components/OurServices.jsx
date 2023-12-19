@@ -47,8 +47,8 @@ const services = [
 
 const OurServices = () => {
   return (
-    <div>
-      <div className="text-center">
+    <div className="mt-80 mb-20">
+      <div className="text-center mb-10">
         <div className="flex justify-center">
           <span className="mt-2 mr-5">
             <p className="">
@@ -70,10 +70,10 @@ const OurServices = () => {
         </div>
         <h1 className="text-4xl font-bold text-slate-700">Our Services</h1>
       </div>
-      <div className="grid grid-cols-4 gap-20 mx-32 mt-10">
+      <div className="grid grid-cols-4 gap-28 mx-32">
         {services.map((service, index) => {
           return (
-            <ul className="w-80" key={index}>
+            <ul className="w-80 p-4 shadow-md shadow-gray-300" key={index}>
               <li className="text-lime-600 text-5xl">{service.icon}</li>
               <li className="text-2xl text-zinc-700 font-bold mt-4">
                 {service.title}

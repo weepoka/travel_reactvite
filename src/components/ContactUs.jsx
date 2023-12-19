@@ -4,7 +4,7 @@ import { LuMailOpen } from "react-icons/lu";
 
 const ContactUs = () => {
   return (
-    <div className="mb-20 mx-20">
+    <div className="mt-80 mb-20 mx-20">
       <div className="text-center">
         <div className="flex justify-center">
           <span className="mt-2 ml-2">

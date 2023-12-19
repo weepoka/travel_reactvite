@@ -17,17 +17,16 @@ const PagesDropDown = () => {
         className="flex items-center "
       >
         <p>Pages</p> <IoMdArrowDropdown />
+        {isDropDownOpen && (
+          <div className="absolute mt-56 text-black bg-white p-3 rounded text-base font-normal w-36">
+            <p>Destination</p>
+            <p>Booking</p>
+            <p>Travel Guides</p>
+            <p>Testimonials</p>
+            <p>404 Page</p>
+          </div>
+        )}
       </div>
-
-      {isDropDownOpen && (
-        <div className="absolute mt-10 text-black bg-white p-3 rounded text-base font-normal w-36">
-          <p>Destination</p>
-          <p>Booking</p>
-          <p>Travel Guides</p>
-          <p>Testimonials</p>
-          <p>404 Page</p>
-        </div>
-      )}
     </div>
   );
 };

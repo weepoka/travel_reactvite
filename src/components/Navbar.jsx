@@ -1,10 +1,28 @@
 import { FaLocationDot } from "react-icons/fa6";
 import PagesDropDown from "./PagesDropDown";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const Navbar = () => {
+  const [active, setActive] = useState(false);
+  const [color, setColor] = useState(false);
+
+  window.addEventListener("scroll", function () {
+    if (this.window.scrollY > 50) {
+      setActive(true);
+    } else {
+      setActive(false);
+    }
+  });
+  window.addEventListener("scroll", function () {
+    if (this.window.scrollY > 50) {
+      setColor(true);
+    } else {
+      setColor(false);
+    }
+  });
   return (
-    <div>
+    <div className={active ? "bg-white  fixed top-0  w-full " : ""}>
       <div className="flex justify-between px-10 items-center mt-5 sticky z-50">
         <Link
           to="/"
@@ -15,7 +33,13 @@ const Navbar = () => {
           </p>
           <h1>TRAVEL</h1>
         </Link>
-        <div className="flex text-white font-semibold text-xl mr-4 h-16">
+        <div
+          className={
+            color
+              ? "flex text-black font-semibold text-xl mr-4 h-16"
+              : "flex text-white font-semibold text-xl mr-4 h-16"
+          }
+        >
           <Link to="/" className="mr-6">
             Home
           </Link>

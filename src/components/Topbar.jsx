@@ -11,7 +11,7 @@ import {
 
 const Topbar = () => {
   return (
-    <div className="bg-slate-950 text-white text-base flex justify-between px-10 py-2 relative z-50">
+    <div className="bg-slate-950 text-white text-base flex justify-between px-10 py-2 relative z-50 top-0">
       <div className="flex  justify-between">
         <div className="flex items-center mr-3">
           <FaLocationDot className="mr-1" />
